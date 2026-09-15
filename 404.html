@@ -3,68 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found (404) | RS Neuro Care Centre Bettiah</title>
-  <meta name="description" content="The requested page could not be found. Return to RS Neuro Care Centre home.">
-  <link rel="icon" type="image/png" href="rs logo.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="supabase-config.js"></script>
+  <title>Page Not Found (404) | RS Neuro Health Care Center</title>
+  <meta name="description" content="The requested page could not be found. Return to RS Neuro Health Care Center home.">
+  <meta name="robots" content="noindex, follow">
+  <meta property="og:title" content="Page Not Found (404) | RS Neuro Health Care Center">
+  <meta property="og:description" content="The requested page could not be found. Return to RS Neuro Health Care Center home.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Page Not Found (404) | RS Neuro Health Care Center">
+  <meta name="twitter:description" content="The requested page could not be found. Return to RS Neuro Health Care Center home.">
+  <meta name="twitter:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <link rel="icon" type="image/png" href="rs-logo.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="header">
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="logo-img">
-        <span>Neuro Care</span>
+      <a href="index.html" class="brand" aria-label="RS Neuro Health Care Center Home">
+        <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="44" height="44">
+        <div class="brand-info">
+          <span class="brand-title">RS Neuro Health Care Center</span>
+          <span class="brand-subtitle">Neurological Care & Rehabilitation</span>
+        </div>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="doctors.html" class="nav-link">Doctors / Team</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="tel:[Phone Number]" class="btn btn-subtle btn-sm" aria-label="Call clinic at placeholder phone number">
+          <span>📞</span> [Phone Number]
+        </a>
+        <a href="appointment.html" class="btn btn-primary btn-sm">
+          Book Appointment
+        </a>
+      </div>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html">👨‍⚕️ About</a>
-        <a href="services.html">🩺 Services</a>
-        <a href="courses.html">🎓 Courses</a>
-        <a href="contact.html">📞 Contact</a>
-        <a href="tel:08797459791" class="btn">📅 Call now</a>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="doctors.html" class="mobile-nav-link">Doctors / Team</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <a href="appointment.html" class="btn btn-primary" style="width: 100%;">Book Appointment</a>
+        <a href="tel:[Phone Number]" class="btn btn-outline" style="width: 100%;">📞 Call: [Phone Number]</a>
       </div>
     </div>
   </header>
 
-  <main class="container" style="padding: 80px 20px; text-align: center; min-height: 60vh;">
-    <div style="font-size: 4rem; margin-bottom: 10px;">🩺 404</div>
-    <h1 style="font-size: 2.2rem; margin-bottom: 12px;">Page Not Found</h1>
-    <p style="max-width: 500px; margin: 0 auto 24px;">The page you are looking for might have been moved, renamed, or is temporarily unavailable.</p>
-    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-      <a href="index.html" class="btn">🏠 Return to Home</a>
-      <a href="courses.html" class="btn btn-outline">🎓 Explore Courses</a>
-      <a href="contact.html" class="btn btn-outline">📞 Contact Clinic</a>
-    </div>
+  <main id="main-content">
+    <section class="section">
+      <div class="container" style="text-align: center; max-width: 600px;">
+        <span class="badge badge-sand" style="margin-bottom: var(--space-3);">Error 404</span>
+        <h1 class="section-title">Page Not Found</h1>
+        <p class="section-desc" style="margin-bottom: var(--space-6);">
+          The neurological care page or resource you are looking for does not exist or has been relocated.
+        </p>
+        <div style="display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap;">
+          <a href="index.html" class="btn btn-primary btn-lg">Return to Home</a>
+          <a href="contact.html" class="btn btn-outline btn-lg">Contact Clinic</a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Global Footer -->
   <footer class="footer">
     <div class="container">
-      <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="footer-logo-img">
-      <p>
-        <span class="footer-emoji">🧠</span> RS Neuro Care Centre — Dr. R. K. Gupta 
-        <span class="footer-emoji">🩺</span><br>
-        Manuwapul, Bettiah, Bihar 845450 · 📞 <a href="tel:08797459791" style="color: var(--primary-dark);">087974 59791</a><br>
-        © 2025 RS Neuro Care Centre. All rights reserved.
-      </p>
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: var(--space-4);">
+            <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="40" height="40">
+            <div class="brand-info">
+              <span class="brand-title">RS Neuro Care</span>
+              <span class="brand-subtitle">Health Care Center</span>
+            </div>
+          </a>
+          <p class="text-sm" style="margin-bottom: var(--space-4);">
+            RS Neuro Health Care Center is committed to evidence-based neurological consultations, spine care, and patient rehabilitation in [Clinic Address].
+          </p>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Facebook: [Social Link Pending Configuration]">[Facebook]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Instagram: [Social Link Pending Configuration]">[Instagram]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic YouTube: [Social Link Pending Configuration]">[YouTube]</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors / Team</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Patient & Care</h4>
+          <ul class="footer-links">
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Neurological Services</a></li>
+            <li><a href="services.html">Spine & Nerve Health</a></li>
+            <li><a href="doctors.html">Consultation Schedule</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Center Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span>📍</span>
+              <span>[Clinic Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>📞</span>
+              <a href="tel:[Phone Number]" style="color: inherit; text-decoration: underline;">[Phone Number]</a>
+            </div>
+            <div class="footer-contact-item">
+              <span>✉️</span>
+              <span>[Email Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>🕒</span>
+              <span>[Consultation Hours]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2025</span> RS Neuro Health Care Center. All rights reserved.</p>
+        <p class="text-caption">
+          Patient Privacy Notice · Healthcare Disclaimer: Medical information provided is for educational guidance only. Consult [Doctor Name] for clinical diagnosis.
+        </p>
+      </div>
     </div>
   </footer>
 
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('nav-open');
-        navToggle.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', isOpen);
-      });
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

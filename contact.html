@@ -3,132 +3,417 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & Location | RS Neuro Care Centre Bettiah</title>
-  <meta name="description" content="Contact RS Neuro Care Centre, Bettiah. Address: Govt School, Manuwapul, Bettiah, Bihar 845450. Phone: 087974 59791. Open 24 hours for emergency neuro & spine care.">
-  <meta name="keywords" content="RS Neuro Care Centre contact, Bettiah neuro clinic phone number, Dr R K Gupta address, Manuwapul Bettiah hospital">
-  <meta property="og:title" content="Contact RS Neuro Care Centre | Bettiah, Bihar">
-  <meta property="og:description" content="Visit or call RS Neuro Care Centre, Bettiah. Open 24/7. Call 087974 59791.">
+  <title>Contact Us | RS Neuro Health Care Center</title>
+  <meta name="description" content="Get in touch with RS Neuro Health Care Center in [Clinic Address]. Outpatient neurological consultations, clinic directions, and enquiry assistance.">
+  <link rel="canonical" href="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/contact.html">
+  <meta property="og:title" content="Contact Us | RS Neuro Health Care Center">
+  <meta property="og:description" content="Outpatient consultations, clinic directions, and patient enquiries in [Clinic Address].">
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/png" href="rs logo.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="supabase-config.js"></script>
+  <meta property="og:url" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/contact.html">
+  <meta property="og:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact Us | RS Neuro Health Care Center">
+  <meta name="twitter:description" content="Outpatient consultations, clinic directions, and patient enquiries in [Clinic Address].">
+  <meta name="twitter:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <link rel="icon" type="image/png" href="rs-logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "RS Neuro Health Care Center",
+    "url": "https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/contact.html",
+    "medicalSpecialty": ["Neurology", "NeuroRehabilitation"]
+  }
+  </script>
 </head>
 <body>
-  <header class="navbar">
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header class="header">
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="logo-img">
-        <span>Neuro Care</span>
+      <!-- Left: Logo & Branding -->
+      <a href="index.html" class="brand" aria-label="RS Neuro Health Care Center Home">
+        <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="44" height="44">
+        <div class="brand-info">
+          <span class="brand-title">RS Neuro Health Care Center</span>
+          <span class="brand-subtitle">Neurological Care & Rehabilitation</span>
+        </div>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <!-- Center: Global Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="doctors.html" class="nav-link">Doctors / Team</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Action CTAs -->
+      <div class="nav-actions">
+        <a href="tel:[Phone Number]" class="btn btn-subtle btn-sm" aria-label="Call clinic at placeholder phone number">
+          <span>📞</span> [Phone Number]
+        </a>
+        <a href="appointment.html" class="btn btn-primary btn-sm">
+          Book Appointment
+        </a>
+      </div>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html">👨‍⚕️ About</a>
-        <a href="services.html">🩺 Services</a>
-        <a href="courses.html">🎓 Courses</a>
-        <a href="contact.html" class="active-page">📞 Contact</a>
-        <a href="tel:08797459791" class="btn">📅 Call now</a>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="doctors.html" class="mobile-nav-link">Doctors / Team</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="mobile-nav-link active" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <a href="appointment.html" class="btn btn-primary" style="width: 100%;">Book Appointment</a>
+        <a href="tel:[Phone Number]" class="btn btn-outline" style="width: 100%;">📞 Call: [Phone Number]</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section" style="background: var(--gray-light);">
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    <!-- SECTION 1 — CONTACT HERO -->
+    <section class="hero" aria-labelledby="contact-hero-heading">
       <div class="container">
-        <div class="section-title">
-          <h2>📞 Contact RS Neuro Care Centre</h2>
-          <p>Visit us or call — open 24 hours.</p>
-        </div>
-        <div class="contact-wrapper">
-          <div class="contact-info">
-            <div class="contact-item">
-              <div class="contact-emoji">🏥</div>
-              <div class="contact-text">
-                <strong>RS Neuro Care Centre</strong>
-                Govt School, Manuwapul, Bettiah,<br> Gurwalia Biswas Bandobasti,<br> Bihar 845450
-              </div>
+        <!-- Accessible Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">/</li>
+            <li class="breadcrumb-item breadcrumb-current" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="section-tag">Contact Us</span>
+            <h1 id="contact-hero-heading" class="hero-display-title">
+              We're Here to Help You <span class="text-accent">Connect With Our Clinic</span>
+            </h1>
+            <p class="text-lead">
+              <strong>[Contact Introduction]</strong><br>
+              Reach out to our clinical coordination team for outpatient consultations, visit guidance, or general questions regarding our center in [Clinic Address].
+            </p>
+            <div class="hero-actions">
+              <a href="appointment.html" class="btn btn-primary btn-lg">Book an Appointment</a>
+              <a href="#contact-details" class="btn btn-outline btn-lg">View Contact Details</a>
             </div>
-            <div class="contact-item">
-              <div class="contact-emoji">📞</div>
-              <div class="contact-text">
-                <strong>Phone</strong>
-                <a href="tel:08797459791" style="color: var(--primary-blue); text-decoration: none;">087974 59791</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-emoji">🌐</div>
-              <div class="contact-text">
-                <strong>Website</strong>
-                <a href="https://rsneurocare.com" target="_blank" style="color: var(--primary-blue); text-decoration: none;">rsneurocare.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-emoji">🕒</div>
-              <div class="contact-text">
-                <strong>Hours</strong>
-                Open 24 hours · 7 days a week
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-emoji">🏳️‍🌈</div>
-              <div class="contact-text">
-                <strong>Inclusive & women-owned</strong>
-                LGBTQ+ friendly · Identifies as women-owned
-              </div>
-            </div>
-            <a href="tel:08797459791" class="btn" style="margin-top: 5px;">📅 Call now</a>
           </div>
-          <div class="map-container">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.491407923019!2d84.48140427457075!3d26.82587607669907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39936ee836399f4d%3A0x1459d5d76784d1c2!2sRS%20NEURO%20CARE%20CENTRE%20BETTIAH%20(%20Dr.%20R.%20K.%20Gupta%20Neuro%20)!5e1!3m2!1sen!2sin!4v1789367608861!5m2!1sen!2sin" 
-              width="600" 
-              height="450" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="strict-origin-when-cross-origin"
-              title="RS Neuro Care Centre Bettiah location">
-            </iframe>
+
+          <!-- Hero Visual: Clinic Emblem Card -->
+          <div class="hero-card">
+            <img src="rs-logo.png" alt="RS Neuro Health Care Center Official Emblem" class="hero-logo-img" width="120" height="120">
+            <h2 style="font-size: 1.25rem; margin-bottom: var(--space-2);">RS Neuro Health Care Center</h2>
+            <p class="text-sm" style="margin-bottom: var(--space-3);">
+              Patient Navigation & Clinical Consultations in [Clinic Address].
+            </p>
+            <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap;">
+              <span class="badge badge-sand">Dedicated Assistance</span>
+              <span class="badge badge-ocean">Outpatient Access</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — 2-COLUMN CONTACT INFORMATION & ENQUIRY FORM -->
+    <section class="section" id="contact-details" aria-labelledby="contact-section-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-section-heading" class="section-title">Clinic Communication & Enquiry Desk</h2>
+          <p class="section-desc">
+            Connect directly with our outpatient desk or send an administrative message using our secure form below.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- LEFT COLUMN: Contact Information Cards -->
+          <div class="contact-cards-list">
+            <!-- Card 1: Clinic Location -->
+            <article class="contact-card">
+              <div class="contact-card-icon contact-card-icon-sand">📍</div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Clinic Address</span>
+                <p class="contact-card-val">[Clinic Address]</p>
+                <p class="contact-card-sub">In-person consultations are scheduled by appointment to maintain dedicated care.</p>
+                <span class="btn btn-subtle btn-sm" style="opacity: 0.85; pointer-events: none;">Get Directions (Location Planned)</span>
+              </div>
+            </article>
+
+            <!-- Card 2: Phone -->
+            <article class="contact-card">
+              <div class="contact-card-icon">📞</div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Telephone Line</span>
+                <p class="contact-card-val">[Phone Number]</p>
+                <p class="contact-card-sub">Speak with our clinical front-desk navigation team during consultation hours.</p>
+                <a href="tel:[Phone Number]" class="btn btn-subtle btn-sm">Call: [Phone Number]</a>
+              </div>
+            </article>
+
+            <!-- Card 3: WhatsApp -->
+            <article class="contact-card">
+              <div class="contact-card-icon contact-card-icon-forest">💬</div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">WhatsApp Messaging</span>
+                <p class="contact-card-val">[WhatsApp Number]</p>
+                <p class="contact-card-sub">Direct chat link will be connected once the official clinic mobile number is registered.</p>
+                <span class="btn btn-subtle btn-sm" style="opacity: 0.85; pointer-events: none;">Chat on WhatsApp (Number Planned)</span>
+              </div>
+            </article>
+
+            <!-- Card 4: Email -->
+            <article class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Electronic Mail</span>
+                <p class="contact-card-val">[Email Address]</p>
+                <p class="contact-card-sub">For general patient inquiries, referral letters, and coordination queries.</p>
+                <a href="mailto:[Email Address]" class="btn btn-subtle btn-sm">Email: [Email Address]</a>
+              </div>
+            </article>
+
+            <!-- Card 5: Timings -->
+            <article class="contact-card">
+              <div class="contact-card-icon contact-card-icon-sand">🕒</div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Consultation Hours</span>
+                <p class="contact-card-val">[Consultation Hours]</p>
+                <p class="contact-card-sub">Emergency Advisory: For acute, sudden neurological emergencies (stroke symptoms, severe head trauma), seek immediate hospital emergency care.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- RIGHT COLUMN: Frontend Enquiry Form -->
+          <div class="enquiry-form-card">
+            <h3 style="font-size: 1.35rem; font-weight: var(--font-weight-bold); color: var(--color-text-primary); margin-bottom: var(--space-2);">Send an Enquiry</h3>
+            <p class="text-sm" style="margin-bottom: var(--space-4);">
+              Fill in your details below for non-emergency scheduling questions or consultation guidance.
+            </p>
+
+            <!-- Medical Privacy Notice -->
+            <div class="privacy-notice-box">
+              <strong>Patient Privacy Notice:</strong> Please do not include sensitive medical records, prescription scans, or confidential diagnostic reports in this general enquiry form.
+            </div>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="fullName" class="form-label">
+                  <span>Full Name</span>
+                  <span class="required-tag">*Required</span>
+                </label>
+                <input type="text" id="fullName" name="fullName" class="form-input" required placeholder="Enter your full name" autocomplete="name">
+                <span class="form-error-msg" id="fullNameError">Please enter your full name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">
+                  <span>Phone Number</span>
+                  <span class="required-tag">*Required</span>
+                </label>
+                <input type="tel" id="phone" name="phone" class="form-input" required placeholder="Enter your contact number" autocomplete="tel">
+                <span class="form-error-msg" id="phoneError">Please enter a valid telephone number.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  <span>Email Address</span>
+                  <span class="text-caption" style="color: var(--color-text-muted); font-weight: normal;">Optional</span>
+                </label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="name@example.com" autocomplete="email">
+                <span class="form-error-msg" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">
+                  <span>Enquiry Topic</span>
+                  <span class="text-caption" style="color: var(--color-text-muted); font-weight: normal;">Optional</span>
+                </label>
+                <select id="subject" name="subject" class="form-select">
+                  <option value="General Inquiry">General Clinical Inquiry</option>
+                  <option value="Consultation Scheduling">Consultation Scheduling Question</option>
+                  <option value="Service Information">Service Information Question</option>
+                  <option value="Rehabilitation Support">Rehabilitation Support Inquiry</option>
+                  <option value="Other">Other Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">
+                  <span>Your Message</span>
+                  <span class="required-tag">*Required</span>
+                </label>
+                <textarea id="message" name="message" class="form-textarea" required placeholder="How can our clinical team assist you?"></textarea>
+                <span class="form-error-msg" id="messageError">Please enter your message or question.</span>
+              </div>
+
+              <label class="form-checkbox-label">
+                <input type="checkbox" id="consent" name="consent" required>
+                <span>I agree to be contacted by RS Neuro Health Care Center regarding my enquiry.</span>
+              </label>
+              <span class="form-error-msg" id="consentError" style="margin-bottom: var(--space-3);">You must agree to be contacted to submit an enquiry.</span>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                Submit Enquiry
+              </button>
+
+              <div id="formStatusBanner" class="form-status-banner form-status-info" role="status" aria-live="polite">
+                <strong>Notice:</strong> Form submission service will be connected after the clinic's preferred contact method is confirmed. For immediate inquiries, please call <a href="tel:[Phone Number]" style="color: inherit; text-decoration: underline;">[Phone Number]</a>.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — GOOGLE MAPS SECTION -->
+    <section class="section section-alt" aria-labelledby="map-section-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Find Our Center</span>
+          <h2 id="map-section-heading" class="section-title">Clinic Location & Directions</h2>
+          <p class="section-desc">
+            Conveniently accessible outpatient neurological facilities located in [Clinic Address].
+          </p>
+        </div>
+
+        <div class="map-wrapper">
+          <div class="map-placeholder">
+            <div class="map-icon">🗺️</div>
+            <h3 class="map-title">[Google Maps Location]</h3>
+            <p class="map-desc">
+              Verified interactive Google Maps embed will be connected here upon confirmation of the clinic's official address and coordinates in [Clinic Address].
+            </p>
+            <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; justify-content: center; align-items: center;">
+              <span class="badge badge-sand">Location: [Clinic Address]</span>
+              <span class="btn btn-outline" style="opacity: 0.85; pointer-events: none;">Get Directions (Location Planned)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — APPOINTMENT CONVERSION CTA -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-sand-light) 0%, rgba(224, 242, 254, 0.4) 100%); border-top: 1px solid var(--color-border-subtle);" aria-labelledby="contact-cta-heading">
+      <div class="container text-center">
+        <div style="max-width: 680px; margin-inline: auto;">
+          <span class="section-tag">Schedule Your Visit</span>
+          <h2 id="contact-cta-heading" class="section-title">Ready to Schedule a Consultation?</h2>
+          <p class="section-desc" style="margin-bottom: var(--space-6);">
+            Book an outpatient appointment at RS Neuro Health Care Center in [Clinic Address] to discuss your neurological care needs.
+          </p>
+          <div class="cta-actions" style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+            <a href="appointment.html" class="btn btn-primary btn-lg">Book an Appointment</a>
+            <a href="tel:[Phone Number]" class="btn btn-outline btn-lg">Call Clinic: [Phone Number]</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Global Footer -->
   <footer class="footer">
     <div class="container">
-      <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="footer-logo-img">
-      <p>
-        <span class="footer-emoji">🧠</span> RS Neuro Care Centre — Dr. R. K. Gupta 
-        <span class="footer-emoji">🩺</span><br>
-        Manuwapul, Bettiah, Bihar 845450 · 📞 <a href="tel:08797459791" style="color: var(--primary-dark);">087974 59791</a><br>
-        © 2025 RS Neuro Care Centre. All rights reserved.
-      </p>
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Identity -->
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: var(--space-4);">
+            <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="40" height="40">
+            <div class="brand-info">
+              <span class="brand-title">RS Neuro Care</span>
+              <span class="brand-subtitle">Health Care Center</span>
+            </div>
+          </a>
+          <p class="text-sm" style="margin-bottom: var(--space-4);">
+            RS Neuro Health Care Center provides dedicated neurological consultations, conservative spine care, and patient-first rehabilitation support in [Clinic Address].
+          </p>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Facebook: [Social Link Pending Configuration]">[Facebook]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Instagram: [Social Link Pending Configuration]">[Instagram]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic YouTube: [Social Link Pending Configuration]">[YouTube]</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors / Team</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Care Pathways -->
+        <div>
+          <h4 class="footer-col-title">Patient & Care</h4>
+          <ul class="footer-links">
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Neurological Services</a></li>
+            <li><a href="services.html">Spine & Nerve Health</a></li>
+            <li><a href="doctors.html">Consultation Schedule</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div>
+          <h4 class="footer-col-title">Center Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span>📍</span>
+              <span>[Clinic Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>📞</span>
+              <a href="tel:[Phone Number]" style="color: inherit; text-decoration: underline;">[Phone Number]</a>
+            </div>
+            <div class="footer-contact-item">
+              <span>✉️</span>
+              <span>[Email Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>🕒</span>
+              <span>[Consultation Hours]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2025</span> RS Neuro Health Care Center. All rights reserved.</p>
+        <p class="text-caption">
+          Patient Privacy Notice · Healthcare Disclaimer: Medical information provided is for educational guidance only. Consult [Doctor Name] for clinical diagnosis.
+        </p>
+      </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp CTA -->
-  <a href="https://wa.me/918797459791?text=Namaste%20Dr.%20Gupta,%20mujhe%20appointment%20ke%20liye%20jankari%20chahiye." class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="22">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-    </svg>
-    <span>Chat on WhatsApp</span>
-  </a>
-
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('nav-open');
-        navToggle.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', isOpen);
-      });
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

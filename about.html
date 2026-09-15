@@ -3,87 +3,347 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Dr. R. K. Gupta | RS Neuro Care Centre Bettiah</title>
-  <meta name="description" content="Learn about Dr. R. K. Gupta, leading neuro specialist and founder of RS Neuro Care Centre in Bettiah, Bihar. Expert neurological, spine, and rehabilitation care.">
-  <meta name="keywords" content="Dr R K Gupta Bettiah, Neuro specialist Bettiah, neurologist Bettiah Bihar, RS Neuro Care Centre doctor, spine care Bettiah">
-  <meta property="og:title" content="About Dr. R. K. Gupta | RS Neuro Care Centre Bettiah">
-  <meta property="og:description" content="Meet Dr. R. K. Gupta, Neuro Specialist at RS Neuro Care Centre, Bettiah, Bihar. 4.7★ rated care.">
+  <title>About Us | RS Neuro Health Care Center</title>
+  <meta name="description" content="Learn about RS Neuro Health Care Center, our clinical care philosophy, mission, and patient-centered neurological services in [Clinic Address].">
+  <link rel="canonical" href="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/about.html">
+  <meta property="og:title" content="About Us | RS Neuro Health Care Center">
+  <meta property="og:description" content="Dedicated to thoughtful neurological care, diagnostic precision, and patient-first rehabilitation.">
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/png" href="rs logo.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="supabase-config.js"></script>
+  <meta property="og:url" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/about.html">
+  <meta property="og:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="About Us | RS Neuro Health Care Center">
+  <meta name="twitter:description" content="Dedicated to thoughtful neurological care, diagnostic precision, and patient-first rehabilitation.">
+  <meta name="twitter:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <link rel="icon" type="image/png" href="rs-logo.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header class="header">
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="logo-img">
-        <span>Neuro Care</span>
+      <a href="index.html" class="brand" aria-label="RS Neuro Health Care Center Home">
+        <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="44" height="44">
+        <div class="brand-info">
+          <span class="brand-title">RS Neuro Health Care Center</span>
+          <span class="brand-subtitle">Neurological Care & Rehabilitation</span>
+        </div>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active" aria-current="page">About Us</a></li>
+          <li><a href="doctors.html" class="nav-link">Doctors / Team</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Actions -->
+      <div class="nav-actions">
+        <a href="tel:[Phone Number]" class="btn btn-subtle btn-sm" aria-label="Call clinic at placeholder phone number">
+          <span>📞</span> [Phone Number]
+        </a>
+        <a href="appointment.html" class="btn btn-primary btn-sm">
+          Book Appointment
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html" class="active-page">👨‍⚕️ About</a>
-        <a href="services.html">🩺 Services</a>
-        <a href="courses.html">🎓 Courses</a>
-        <a href="contact.html">📞 Contact</a>
-        <a href="tel:08797459791" class="btn">📅 Call now</a>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link active" aria-current="page">About Us</a></li>
+        <li><a href="doctors.html" class="mobile-nav-link">Doctors / Team</a></li>
+        <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <a href="appointment.html" class="btn btn-primary" style="width: 100%;">Book Appointment</a>
+        <a href="tel:[Phone Number]" class="btn btn-outline" style="width: 100%;">📞 Call: [Phone Number]</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section">
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    <!-- SECTION 1 — ABOUT HERO -->
+    <section class="hero" aria-labelledby="about-hero-heading">
       <div class="container">
-        <div class="section-title">
-          <h2>👨‍⚕️ About Dr. R. K. Gupta</h2>
-          <p>Neuro specialist & founder of RS Neuro Care Centre, Bettiah.</p>
-        </div>
-        <div class="profile-grid">
-          <div class="profile-avatar">
-            👨‍⚕️
-            <div style="font-size: 1.2rem; margin-top: 12px;">Dr. R. K. Gupta</div>
-            <div style="font-size: 0.95rem; color: var(--text-soft);">Neurologist & Spine Care</div>
-          </div>
-          <div class="profile-details">
-            <h3>Dr. R. K. Gupta</h3>
-            <div class="profile-title">Neuro Specialist · RS Neuro Care Centre</div>
-            <p>Dr. R. K. Gupta is a renowned neuro specialist based in Bettiah, Bihar. With years of experience in neurological and spinal care, he leads RS Neuro Care Centre — a dedicated clinic for advanced nerve treatment, chiropractic adjustments, and physiotherapy.</p>
-            <ul class="profile-list">
-              <li><span>🧠</span> Expert in neurological & spinal disorders</li>
-              <li><span>💆</span> Advanced chiropractic & physiotherapy</li>
-              <li><span>🏥</span> Open 24 hours for emergency care</li>
-              <li><span>🌟</span> 4.7★ rated by 51 patients on Google</li>
-              <li><span>📍</span> Manuwapul, Bettiah, Bihar 845450</li>
-            </ul>
-            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-              <a href="tel:08797459791" class="btn">📞 Call clinic</a>
-              <a href="https://rsneurocare.com" target="_blank" class="btn btn-outline">🌐 rsneurocare.com</a>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="section-tag">About RS Neuro Health Care Center</span>
+            <h1 id="about-hero-heading" class="hero-display-title">
+              Committed to <span class="text-accent">Thoughtful Neurological Care</span>
+            </h1>
+            <p class="text-lead">
+              RS Neuro Health Care Center provides dedicated neurological assessments, spine health consultations, and evidence-based rehabilitation protocols. Consult with our specialist team at [Clinic Address].
+            </p>
+            <div class="hero-actions">
+              <a href="doctors.html" class="btn btn-primary btn-lg">Meet Our Doctors</a>
+              <a href="appointment.html" class="btn btn-outline btn-lg">Book an Appointment</a>
             </div>
           </div>
+
+          <!-- Hero Visual: Clinic Emblem Card -->
+          <div class="hero-card">
+            <img src="rs-logo.png" alt="RS Neuro Health Care Center Official Emblem" class="hero-logo-img" width="120" height="120">
+            <h2 style="font-size: 1.25rem; margin-bottom: var(--space-2);">RS Neuro Health Care Center</h2>
+            <p class="text-sm" style="margin-bottom: var(--space-3);">
+              Clinical Focus: <strong>Neurology & Spine Wellness</strong><br>
+              <span class="text-caption">[Clinic Introduction & Foundation Profile]</span>
+            </p>
+            <div class="divider divider-subtle" style="margin-block: var(--space-3);"></div>
+            <p class="text-caption">
+              📍 Location: [Clinic Address]<br>
+              🕒 Consultation Hours: [Consultation Hours]
+            </p>
+            <div style="margin-top: var(--space-4);">
+              <span class="badge badge-forest">✓ Patient-Centered Facility</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — ABOUT INTRODUCTION (2-COLUMN) -->
+    <section class="section" aria-labelledby="intro-section-heading">
+      <div class="container">
+        <div class="intro-grid">
+          <div>
+            <span class="section-tag">Our Healthcare Background</span>
+            <h2 id="intro-section-heading" class="section-title">Who We Are & What Drives Our Practice</h2>
+            <p class="text-lead" style="margin-bottom: var(--space-4);">
+              RS Neuro Health Care Center was established to provide clinical neurological consultations and supportive recovery guidance to individuals experiencing nerve disorders, spinal discomfort, and complex neurological symptoms.
+            </p>
+            <p style="margin-bottom: var(--space-4);">
+              <strong>What the center focuses on:</strong> Our practice emphasizes systematic clinical examinations, precise diagnostic correlation, and conservative management pathways for headache, spine health, sciatica, and motor recovery.
+            </p>
+            <p>
+              <strong>Patient-centered philosophy:</strong> We believe effective neurological care begins with attentive listening. By allowing adequate time for each consultation, our team ensures patients understand their health status and treatment options thoroughly.
+            </p>
+          </div>
+
+          <div class="intro-card">
+            <h3 style="font-size: 1.15rem; margin-bottom: var(--space-3); color: var(--color-text-primary);">Clinical Highlights</h3>
+            <p class="text-sm" style="margin-bottom: var(--space-4);">Key attributes defining our patient care delivery in [Clinic Address]:</p>
+            <div class="intro-pillar-list">
+              <div class="intro-pillar-item">
+                <span class="intro-pillar-icon">✓</span>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 2px;">Dedicated Consultation Time</h4>
+                  <p class="text-caption">Thorough evaluations focused on individual symptom review without rushed assessments.</p>
+                </div>
+              </div>
+              <div class="intro-pillar-item">
+                <span class="intro-pillar-icon">✓</span>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 2px;">Evidence-Based Frameworks</h4>
+                  <p class="text-caption">Care plans adhering to accepted neurological and physical rehabilitation standards.</p>
+                </div>
+              </div>
+              <div class="intro-pillar-item">
+                <span class="intro-pillar-icon">✓</span>
+                <div>
+                  <h4 style="font-size: 0.95rem; margin-bottom: 2px;">Calm Consultation Atmosphere</h4>
+                  <p class="text-caption">Clean, supportive clinical environment designed for patient reassurance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — MISSION / VISION -->
+    <section class="section section-alt" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Guiding Principles</span>
+          <h2 id="mission-heading" class="section-title">Our Mission & Clinical Vision</h2>
+          <p class="section-desc">
+            The core values shaping every consultation, diagnostic evaluation, and recovery plan at RS Neuro Health Care Center.
+          </p>
         </div>
 
-        <div style="margin-top: 50px; background: white; border-radius: 24px; padding: 30px; box-shadow: var(--shadow-sm);">
-          <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-bottom: 20px;">
-            <span class="rating-badge">⭐ 4.7 · 51 Google reviews</span>
-            <span style="color: var(--text-soft);">Patients appreciate: <strong>treatment (14)</strong>, <strong>doctor (3)</strong>, <strong>neuro doctor (3)</strong></span>
+        <div class="mission-grid">
+          <!-- Mission Card -->
+          <article class="mission-card">
+            <div class="card-icon" style="margin-bottom: var(--space-3);">🎯</div>
+            <span class="badge badge-sand" style="margin-bottom: var(--space-2);">Our Purpose</span>
+            <h3 class="card-title">Our Mission</h3>
+            <p class="card-body">
+              <strong>[Mission Statement]</strong><br><br>
+              To provide accessible, evidence-based neurological evaluations, transparent clinical counsel, and structured rehabilitation that prioritize patient comfort, dignity, and long-term functional health.
+            </p>
+            <div class="card-footer">
+              <span class="text-caption">Focus: Clinical Integrity</span>
+            </div>
+          </article>
+
+          <!-- Vision Card -->
+          <article class="mission-card mission-card-vision">
+            <div class="card-icon card-icon-ocean" style="margin-bottom: var(--space-3);">👁️</div>
+            <span class="badge badge-ocean" style="margin-bottom: var(--space-2);">Future Outlook</span>
+            <h3 class="card-title">Our Vision</h3>
+            <p class="card-body">
+              <strong>[Vision Statement]</strong><br><br>
+              To be a trusted center of excellence for outpatient neurological care and spinal wellness in [Clinic Address], recognized for patient-first communication, diagnostic thoroughness, and ethical practice.
+            </p>
+            <div class="card-footer">
+              <span class="text-caption">Focus: Healthcare Excellence</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — CARE APPROACH -->
+    <section class="section" aria-labelledby="care-approach-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Clinical Methodology</span>
+          <h2 id="care-approach-heading" class="section-title">A Thoughtful, Evidence-Based Care Approach</h2>
+          <p class="section-desc">
+            We apply systematic care protocols that emphasize diagnostic precision, patient comfort, and respectful collaboration.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="trust-item">
+            <div class="trust-item-icon">✓</div>
+            <div>
+              <h3 class="trust-item-title">Patient-Focused Care</h3>
+              <p class="trust-item-desc">
+                Every consultation is tailored to the patient's individual history. We focus on listening carefully to symptoms, evaluating mobility, and addressing patient concerns with dignity and clinical attentiveness.
+              </p>
+            </div>
           </div>
-          <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div class="review-card" style="flex: 1 1 250px;">
-              <div class="review-header"><span class="reviewer">PAPPU KUMAR</span><span class="review-stars">★★★★★</span></div>
-              <p class="review-text">"मै फर्स्ट टाइम आया हूं, डॉक्टर साहब बहुत अच्छे से बात सुनते हैं और सही सलाह देते हैं। बहुत बढ़िया अनुभव रहा।"</p>
+
+          <div class="trust-item">
+            <div class="trust-item-icon">✓</div>
+            <div>
+              <h3 class="trust-item-title">Clear Communication</h3>
+              <p class="trust-item-desc">
+                Neurological conditions can feel overwhelming. We present diagnosis and treatment recommendations in plain, understandable language so patients and families make confident, informed decisions.
+              </p>
             </div>
-            <div class="review-card" style="flex: 1 1 250px;">
-              <div class="review-header"><span class="reviewer">Sujeet Kumar</span><span class="review-stars">★★★★★</span></div>
-              <p class="review-text">"Very good treatment and advanced care for nerve and back pain. Highly recommended in Bettiah! 👍"</p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item-icon">✓</div>
+            <div>
+              <h3 class="trust-item-title">Professional Consultation</h3>
+              <p class="trust-item-desc">
+                Our evaluations adhere strictly to recognized clinical frameworks. We formulate conservative management plans, avoiding unsupported claims and ensuring safe treatment trajectories.
+              </p>
             </div>
-            <div class="review-card" style="flex: 1 1 250px;">
-              <div class="review-header"><span class="reviewer">Amit Sharma</span><span class="review-stars">★★★★★</span></div>
-              <p class="review-text">"Dr. R. K. Gupta sir is very experienced and polite. Sciatica pain me bahut relief mila. Best neuro clinic in Bettiah."</p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item-icon">✓</div>
+            <div>
+              <h3 class="trust-item-title">Comfortable Care Environment</h3>
+              <p class="trust-item-desc">
+                From reception to private consultation suites, our center at [Clinic Address] is maintained with rigorous cleanliness, quiet ambiance, and full accessibility for all patient needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — FACILITIES / ENVIRONMENT -->
+    <section class="section section-alt" aria-labelledby="facilities-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Clinical Environment</span>
+          <h2 id="facilities-heading" class="section-title">Facility & Care Architecture</h2>
+          <p class="section-desc">
+            Designed to support clinical focus, patient dignity, and comprehensive neurological evaluations.
+          </p>
+        </div>
+
+        <div class="facility-grid">
+          <!-- Facility Category 1 -->
+          <article class="facility-card">
+            <div class="facility-icon">🚪</div>
+            <span class="badge badge-sand" style="margin-bottom: var(--space-2);">Consultation</span>
+            <h3 style="font-size: 1.05rem; margin-bottom: var(--space-2); color: var(--color-text-primary);">Consultation Environment</h3>
+            <p class="text-sm" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-3);">
+              <strong>[Facility Information]</strong><br>
+              Private, quiet clinical consultation suites tailored for uninterrupted specialist reviews and patient discussions.
+            </p>
+            <span class="text-caption" style="margin-top: auto;">Focus: Patient Privacy</span>
+          </article>
+
+          <!-- Facility Category 2 -->
+          <article class="facility-card">
+            <div class="facility-icon facility-icon-ocean">🛋️</div>
+            <span class="badge badge-ocean" style="margin-bottom: var(--space-2);">Comfort</span>
+            <h3 style="font-size: 1.05rem; margin-bottom: var(--space-2); color: var(--color-text-primary);">Patient Support & Lounge</h3>
+            <p class="text-sm" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-3);">
+              <strong>[Facility Information]</strong><br>
+              A clean and comfortable reception area providing supportive assistance for visiting patients and accompanying families.
+            </p>
+            <span class="text-caption" style="margin-top: auto;">Focus: Accessibility</span>
+          </article>
+
+          <!-- Facility Category 3 -->
+          <article class="facility-card">
+            <div class="facility-icon facility-icon-forest">🔬</div>
+            <span class="badge badge-forest" style="margin-bottom: var(--space-2);">Assessment</span>
+            <h3 style="font-size: 1.05rem; margin-bottom: var(--space-2); color: var(--color-text-primary);">Diagnostic Evaluation Area</h3>
+            <p class="text-sm" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-3);">
+              <strong>[Facility Information]</strong><br>
+              Structured clinical rooms for neurological sensory assessments, reflex tests, and initial symptom evaluations.
+            </p>
+            <span class="text-caption" style="margin-top: auto;">Focus: Diagnostic Protocol</span>
+          </article>
+
+          <!-- Facility Category 4 -->
+          <article class="facility-card">
+            <div class="facility-icon">🩺</div>
+            <span class="badge badge-sand" style="margin-bottom: var(--space-2);">Therapy</span>
+            <h3 style="font-size: 1.05rem; margin-bottom: var(--space-2); color: var(--color-text-primary);">Rehabilitation Space</h3>
+            <p class="text-sm" style="color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-3);">
+              <strong>[Facility Information]</strong><br>
+              Dedicated space supporting functional mobility guidance, posture rehabilitation, and patient recovery plans.
+            </p>
+            <span class="text-caption" style="margin-top: auto;">Focus: Recovery Guidance</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — ABOUT PAGE CTA -->
+    <section class="section" aria-labelledby="about-cta-heading">
+      <div class="container">
+        <div class="cta-section">
+          <div class="cta-content">
+            <span class="section-tag" style="color: var(--color-ocean-dark);">Next Steps</span>
+            <h2 id="about-cta-heading" class="cta-title">Learn More About Our Care</h2>
+            <p class="cta-desc">
+              Explore our medical specialists' profiles or schedule a consultation with our clinical team at [Clinic Address].
+            </p>
+            <div class="cta-actions">
+              <a href="doctors.html" class="btn btn-primary btn-lg">Meet Our Doctors</a>
+              <a href="appointment.html" class="btn btn-outline btn-lg">Book an Appointment</a>
             </div>
           </div>
         </div>
@@ -91,36 +351,87 @@
     </section>
   </main>
 
+  <!-- Global Footer -->
   <footer class="footer">
     <div class="container">
-      <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="footer-logo-img">
-      <p>
-        <span class="footer-emoji">🧠</span> RS Neuro Care Centre — Dr. R. K. Gupta 
-        <span class="footer-emoji">🩺</span><br>
-        Manuwapul, Bettiah, Bihar 845450 · 📞 <a href="tel:08797459791" style="color: var(--primary-dark);">087974 59791</a><br>
-        © 2025 RS Neuro Care Centre. All rights reserved.
-      </p>
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: var(--space-4);">
+            <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="40" height="40">
+            <div class="brand-info">
+              <span class="brand-title">RS Neuro Care</span>
+              <span class="brand-subtitle">Health Care Center</span>
+            </div>
+          </a>
+          <p class="text-sm" style="margin-bottom: var(--space-4);">
+            RS Neuro Health Care Center is committed to evidence-based neurological consultations, spine care, and patient rehabilitation in [Clinic Address].
+          </p>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Facebook: [Social Link Pending Configuration]">[Facebook]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Instagram: [Social Link Pending Configuration]">[Instagram]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic YouTube: [Social Link Pending Configuration]">[YouTube]</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors / Team</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Patient Care Links -->
+        <div>
+          <h4 class="footer-col-title">Patient & Care</h4>
+          <ul class="footer-links">
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Neurological Services</a></li>
+            <li><a href="services.html">Spine & Nerve Health</a></li>
+            <li><a href="doctors.html">Consultation Schedule</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Placeholders -->
+        <div>
+          <h4 class="footer-col-title">Center Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span>📍</span>
+              <span>[Clinic Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>📞</span>
+              <a href="tel:[Phone Number]" style="color: inherit; text-decoration: underline;">[Phone Number]</a>
+            </div>
+            <div class="footer-contact-item">
+              <span>✉️</span>
+              <span>[Email Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>🕒</span>
+              <span>[Consultation Hours]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2025</span> RS Neuro Health Care Center. All rights reserved.</p>
+        <p class="text-caption">
+          Patient Privacy Notice · Healthcare Disclaimer: Medical information provided is for educational guidance only. Consult [Doctor Name] for clinical diagnosis.
+        </p>
+      </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp CTA -->
-  <a href="https://wa.me/918797459791?text=Namaste%20Dr.%20Gupta,%20mujhe%20appointment%20ke%20liye%20jankari%20chahiye." class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="22">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-    </svg>
-    <span>Chat on WhatsApp</span>
-  </a>
-
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('nav-open');
-        navToggle.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', isOpen);
-      });
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

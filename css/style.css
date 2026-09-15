@@ -1,0 +1,245 @@
+/**
+ * RS Neuro Health Care Center — Main Stylesheet
+ * Integrates Tokens, Reset, Typography, and Components
+ */
+
+@import './tokens.css';
+@import './components.css';
+
+/* --- 1. MODERN ACCESSIBLE RESET --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* --- 2. BASE TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  margin-bottom: var(--space-4);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  margin-bottom: var(--space-3);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  margin-bottom: var(--space-2);
+}
+
+p {
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-base);
+  margin-bottom: var(--space-4);
+  text-wrap: pretty;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.text-lead {
+  font-size: var(--font-size-body-lg);
+  line-height: var(--line-height-base);
+  color: var(--color-text-secondary);
+}
+
+.text-sm {
+  font-size: var(--font-size-body-sm);
+}
+
+.text-caption {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+}
+
+/* --- 3. HERO COMPONENT SHELL --- */
+.hero {
+  padding-block: clamp(3rem, 6vw, 5.5rem);
+  background: radial-gradient(circle at 90% 10%, rgba(212, 163, 115, 0.12) 0%, rgba(255, 253, 247, 0) 60%),
+              radial-gradient(circle at 10% 90%, rgba(8, 145, 178, 0.08) 0%, rgba(255, 253, 247, 0) 50%);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-display-title {
+  font-size: var(--font-size-display);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.12;
+  color: var(--color-text-primary);
+  margin-block: var(--space-3) var(--space-4);
+  letter-spacing: -0.02em;
+}
+
+.hero-display-title .text-accent {
+  color: var(--color-ocean-dark);
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .hero-actions,
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-actions .btn,
+  .cta-actions .btn {
+    width: 100%;
+  }
+}
+
+.hero-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  position: relative;
+}
+
+.hero-logo-img {
+  max-width: 140px;
+  height: auto;
+  margin: 0 auto var(--space-4) auto;
+  border-radius: var(--radius-md);
+}
+
+/* --- 4. CLINICAL HIGHLIGHT METRICS (PHASE 1 FOUNDATION) --- */
+.metrics-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-10);
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .metrics-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 640px) {
+  .metrics-strip {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.metric-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-3);
+  text-align: center;
+  transition: border-color var(--transition-fast);
+}
+
+.metric-box:hover {
+  border-color: var(--color-sand);
+}
+
+.metric-val {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.metric-label {
+  font-size: var(--font-size-caption);
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+
+/* --- 5. UTILITIES --- */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

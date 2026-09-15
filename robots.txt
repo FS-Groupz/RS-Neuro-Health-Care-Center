@@ -1,6 +1,14 @@
+# RS Neuro Health Care Center — Robots Configuration
+# https://[production-domain]/
+
 User-agent: *
 Allow: /
-Disallow: /admin.html
-Disallow: /dashboard.html
 
-Sitemap: https://almasyash.github.io/rs-neuro-care/sitemap.xml
+# Disallow private backend code and database files
+Disallow: /backend/
+Disallow: /scratch/
+Disallow: /.env
+Disallow: /.git/
+
+# Production Sitemap Location
+Sitemap: https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/sitemap.xml

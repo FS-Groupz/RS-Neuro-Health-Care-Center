@@ -1,0 +1,123 @@
+/**
+ * RS Neuro Health Care Center — Centralized Design Tokens
+ * Source of truth: design.md (NomadKit Adapted for Medical Healthcare)
+ */
+
+:root {
+  /* --- 1. CORE PALETTE TOKENS --- */
+  --color-sand: #D4A373;
+  --color-sand-hover: #C29263;
+  --color-sand-light: #F7EFE6;
+  --color-sand-dark: #B88252;
+
+  --color-ocean: #0891B2;
+  --color-ocean-hover: #0E7490;
+  --color-ocean-light: #E0F2FE;
+  --color-ocean-dark: #155E75;
+
+  --color-forest: #166534;
+  --color-forest-hover: #14532D;
+  --color-forest-light: #DCFCE7;
+  --color-forest-dark: #0F3E20;
+
+  --color-bg: #FFFDF7;
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F7F4EC;
+  --color-surface-muted: #F1ECE3;
+
+  --color-warning: #CA8A04;
+  --color-warning-light: #FEF9C3;
+  --color-error: #DC2626;
+  --color-error-light: #FEE2E2;
+  --color-info: #0891B2;
+  --color-info-light: #E0F2FE;
+
+  /* --- 2. SEMANTIC ALIASES --- */
+  --color-primary: var(--color-sand);
+  --color-primary-hover: var(--color-sand-hover);
+  --color-primary-contrast: #1A202C; /* Dark text on sand for superior contrast */
+
+  --color-secondary: var(--color-ocean);
+  --color-secondary-hover: var(--color-ocean-hover);
+  --color-secondary-contrast: #FFFFFF;
+
+  --color-tertiary: var(--color-forest);
+  --color-tertiary-hover: var(--color-forest-hover);
+  --color-success: var(--color-forest);
+
+  --color-text-primary: #1A202C;
+  --color-text-secondary: #4A5568;
+  --color-text-muted: #718096;
+  --color-text-inverse: #FFFFFF;
+
+  --color-border: #E5DFD5;
+  --color-border-subtle: #EFEBE3;
+  --color-border-focus: var(--color-ocean);
+
+  /* --- 3. TYPOGRAPHY TOKENS --- */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --font-size-display: clamp(2.25rem, 4.5vw, 3.25rem);
+  --font-size-h1: clamp(1.875rem, 3.5vw, 2.5rem);
+  --font-size-h2: clamp(1.5rem, 2.8vw, 2rem);
+  --font-size-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --font-size-body-lg: 1.125rem;
+  --font-size-body: 1rem;
+  --font-size-body-sm: 0.875rem;
+  --font-size-caption: 0.75rem;
+  --font-size-btn: 1rem;
+  --font-size-nav: 0.95rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.35;
+  --line-height-base: 1.6;
+  --line-height-relaxed: 1.75;
+
+  /* --- 4. SPACING SCALE (8-Point Grid) --- */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+
+  /* Layout Spacing */
+  --container-max: 1200px;
+  --container-gutter: clamp(1rem, 3vw, 1.5rem);
+  --section-spacing: clamp(3.5rem, 6vw, 5.5rem);
+  --card-padding: clamp(1.25rem, 2.5vw, 1.75rem);
+
+  /* --- 5. BORDER RADII --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* --- 6. SHADOWS & ELEVATION --- */
+  --shadow-sm: 0 1px 3px rgba(26, 32, 44, 0.05), 0 1px 2px rgba(26, 32, 44, 0.03);
+  --shadow-md: 0 4px 14px rgba(26, 32, 44, 0.06), 0 2px 4px rgba(26, 32, 44, 0.03);
+  --shadow-lg: 0 10px 25px rgba(26, 32, 44, 0.08), 0 4px 10px rgba(26, 32, 44, 0.04);
+
+  /* --- 7. ANIMATION & TRANSITIONS --- */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 320ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* --- 8. Z-INDEX SYSTEM --- */
+  --z-base: 1;
+  --z-card: 10;
+  --z-sticky: 100;
+  --z-overlay: 500;
+  --z-modal: 1000;
+}

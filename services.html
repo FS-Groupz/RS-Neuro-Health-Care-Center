@@ -3,112 +3,687 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services & Treatments | RS Neuro Care Centre Bettiah</title>
-  <meta name="description" content="Treatments & Services at RS Neuro Care Centre, Bettiah: Neurological Consultation, Spinal & Chiropractic Care, Physiotherapy, Sciatica, and Nerve Treatment.">
-  <meta name="keywords" content="neurology treatments Bettiah, spine doctor Bettiah, physiotherapy clinic Bettiah, sciatica treatment Bettiah, emergency neuro care Bettiah">
-  <meta property="og:title" content="Treatments & Services | RS Neuro Care Centre Bettiah">
-  <meta property="og:description" content="Comprehensive neuro, spine, and physiotherapy services in Bettiah by Dr. R. K. Gupta.">
+  <title>Neurological Services | RS Neuro Health Care Center</title>
+  <meta name="description" content="Explore outpatient neurological services, spine care consultations, headache management, and rehabilitation guidance at RS Neuro Health Care Center in [Clinic Address].">
+  <link rel="canonical" href="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/services.html">
+  <meta property="og:title" content="Neurological Services | RS Neuro Health Care Center">
+  <meta property="og:description" content="Outpatient neurological consultations, spine health, and supportive care pathways in [Clinic Address].">
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/png" href="rs logo.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="supabase-config.js"></script>
+  <meta property="og:url" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/services.html">
+  <meta property="og:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Neurological Services | RS Neuro Health Care Center">
+  <meta name="twitter:description" content="Outpatient neurological consultations, spine health, and supportive care pathways in [Clinic Address].">
+  <meta name="twitter:image" content="https://fs-groupz.github.io/RS-Neuro-Health-Care-Center/rs-logo.png">
+  <link rel="icon" type="image/png" href="rs-logo.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header class="header">
     <div class="container nav-container">
-      <a href="index.html" class="logo">
-        <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="logo-img">
-        <span>Neuro Care</span>
+      <!-- Left: Logo & Branding -->
+      <a href="index.html" class="brand" aria-label="RS Neuro Health Care Center Home">
+        <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="44" height="44">
+        <div class="brand-info">
+          <span class="brand-title">RS Neuro Health Care Center</span>
+          <span class="brand-subtitle">Neurological Care & Rehabilitation</span>
+        </div>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
+
+      <!-- Center: Global Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="doctors.html" class="nav-link">Doctors / Team</a></li>
+          <li><a href="services.html" class="nav-link active" aria-current="page">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Action CTAs -->
+      <div class="nav-actions">
+        <a href="tel:[Phone Number]" class="btn btn-subtle btn-sm" aria-label="Call clinic at placeholder phone number">
+          <span>📞</span> [Phone Number]
+        </a>
+        <a href="appointment.html" class="btn btn-primary btn-sm">
+          Book Appointment
+        </a>
+      </div>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
       </button>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">🏠 Home</a>
-        <a href="about.html">👨‍⚕️ About</a>
-        <a href="services.html" class="active-page">🩺 Services</a>
-        <a href="courses.html">🎓 Courses</a>
-        <a href="contact.html">📞 Contact</a>
-        <a href="tel:08797459791" class="btn">📅 Call now</a>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+        <li><a href="doctors.html" class="mobile-nav-link">Doctors / Team</a></li>
+        <li><a href="services.html" class="mobile-nav-link active" aria-current="page">Services</a></li>
+        <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <a href="appointment.html" class="btn btn-primary" style="width: 100%;">Book Appointment</a>
+        <a href="tel:[Phone Number]" class="btn btn-outline" style="width: 100%;">📞 Call: [Phone Number]</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="section" style="background: var(--gray-light);">
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    <!-- SECTION 1 — SERVICES PAGE HERO -->
+    <section class="hero" aria-labelledby="services-hero-heading">
       <div class="container">
-        <div class="section-title">
-          <h2>🩺 Our Treatments & Services</h2>
-          <p>Specialized neuro & spinal care at RS Neuro Care Centre, Bettiah.</p>
+        <!-- Accessible Breadcrumb -->
+        <nav aria-label="Breadcrumb" class="breadcrumb-nav">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">/</li>
+            <li class="breadcrumb-item breadcrumb-current" aria-current="page">Services</li>
+          </ol>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="section-tag">Our Services</span>
+            <h1 id="services-hero-heading" class="hero-display-title">
+              Neurological Care & <span class="text-accent">Clinical Services</span>
+            </h1>
+            <p class="text-lead">
+              <strong>[Services Introduction]</strong><br>
+              Structured outpatient neurological evaluations, conservative spine health guidance, and coordinated rehabilitation pathways. Consult our clinical team at [Clinic Address].
+            </p>
+            <div class="hero-actions">
+              <a href="appointment.html" class="btn btn-primary btn-lg">Book a Consultation</a>
+              <a href="contact.html" class="btn btn-outline btn-lg">Contact Our Clinic</a>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Clinic Emblem Card -->
+          <div class="hero-card">
+            <img src="rs-logo.png" alt="RS Neuro Health Care Center Official Emblem" class="hero-logo-img" width="120" height="120">
+            <h2 style="font-size: 1.25rem; margin-bottom: var(--space-2);">RS Neuro Health Care Center</h2>
+            <p class="text-sm" style="margin-bottom: var(--space-3);">
+              Clinical Neurological Services & Consultations in [Clinic Address].
+            </p>
+            <div style="display: flex; gap: var(--space-2); justify-content: center; flex-wrap: wrap;">
+              <span class="badge badge-sand">Outpatient Care</span>
+              <span class="badge badge-ocean">Specialist Consultation</span>
+            </div>
+          </div>
         </div>
-        <div class="services-grid">
-          <div class="card">
-            <div class="service-icon">🧠</div>
-            <h3>Neurological Consultation</h3>
-            <p>Expert diagnosis & treatment for headaches, epilepsy, neuropathy, and movement disorders.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — SERVICES OVERVIEW -->
+    <section class="section" aria-labelledby="overview-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Overview</span>
+          <h2 id="overview-heading" class="section-title">Coordinated Neurological Consultations</h2>
+          <p class="section-desc">
+            Neurological healthcare encompasses careful symptom evaluation, clinical diagnosis, individualized management planning, and ongoing supportive care.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="card-icon">📋</div>
+            <h3 class="card-title">Diagnostic Evaluation</h3>
+            <p class="card-body">
+              Structured clinical history taking and neurological physical examinations to evaluate headaches, sensory symptoms, or motor concerns.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon card-icon-ocean">🧭</div>
+            <h3 class="card-title">Treatment Planning</h3>
+            <p class="card-body">
+              Evidence-based care coordination focusing on conservative management, symptom relief strategies, and patient education.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon card-icon-forest">🤝</div>
+            <h3 class="card-title">Supportive & Follow-Up Care</h3>
+            <p class="card-body">
+              Longitudinal tracking of symptom changes, therapy coordination, and regular reviews to assist patient recovery and daily comfort.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — PRIMARY SERVICE GRID (6 CARDS) -->
+    <section class="section section-alt" aria-labelledby="primary-services-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Clinical Offerings</span>
+          <h2 id="primary-services-heading" class="section-title">Outpatient Clinical Services</h2>
+          <p class="section-desc">
+            Our clinical service categories are organized around focused outpatient consultations and supportive care pathways.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Service Card 1 -->
+          <article class="card">
+            <div class="card-icon">🧠</div>
+            <span class="badge badge-sand" style="margin-bottom: var(--space-2);">Diagnostics</span>
+            <h3 class="card-title">[Neurological Evaluation & Diagnosis]</h3>
+            <p class="card-body">
+              Comprehensive assessments for headaches, sensory changes, dizziness, and central nervous system health.
+            </p>
+            <div style="margin-block: var(--space-3);">
+              <span class="text-caption" style="font-weight: 600; text-transform: uppercase; color: var(--color-text-muted);">Common Concerns Addressed:</span>
+              <ul class="card-focus-list">
+                <li class="card-focus-item">[Headache & migraine assessment]</li>
+                <li class="card-focus-item">[Unexplained numbness or tingling]</li>
+                <li class="card-focus-item">[Dizziness and balance symptoms]</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="text-caption">Outpatient Service</span>
+              <a href="appointment.html" class="btn btn-subtle btn-sm">Discuss With Our Team →</a>
+            </div>
+          </article>
+
+          <!-- Service Card 2 -->
+          <article class="card">
+            <div class="card-icon card-icon-ocean">🦴</div>
+            <span class="badge badge-ocean" style="margin-bottom: var(--space-2);">Spine & Nerve</span>
+            <h3 class="card-title">[Spine & Peripheral Nerve Care]</h3>
+            <p class="card-body">
+              Targeted evaluations for sciatica, nerve entrapment, back pain, and radicular symptom management.
+            </p>
+            <div style="margin-block: var(--space-3);">
+              <span class="text-caption" style="font-weight: 600; text-transform: uppercase; color: var(--color-text-muted);">Common Concerns Addressed:</span>
+              <ul class="card-focus-list">
+                <li class="card-focus-item">[Sciatica & radiating nerve pain]</li>
+                <li class="card-focus-item">[Carpal tunnel & peripheral entrapment]</li>
+                <li class="card-focus-item">[Cervical & lumbar spine discomfort]</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="text-caption">Outpatient Service</span>
+              <a href="appointment.html" class="btn btn-subtle btn-sm">Discuss With Our Team →</a>
+            </div>
+          </article>
+
+          <!-- Service Card 3 -->
+          <article class="card">
+            <div class="card-icon card-icon-forest">⚡</div>
+            <span class="badge badge-forest" style="margin-bottom: var(--space-2);">Head & Pain</span>
+            <h3 class="card-title">[Headache & Migraine Management]</h3>
+            <p class="card-body">
+              Evidence-based clinical strategies for chronic migraine, tension headaches, and cluster headache prevention.
+            </p>
+            <div style="margin-block: var(--space-3);">
+              <span class="text-caption" style="font-weight: 600; text-transform: uppercase; color: var(--color-text-muted);">Common Concerns Addressed:</span>
+              <ul class="card-focus-list">
+                <li class="card-focus-item">[Chronic or episodic migraine]</li>
+                <li class="card-focus-item">[Tension-type headache relief]</li>
+                <li class="card-focus-item">[Trigger identification & prevention]</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="text-caption">Outpatient Service</span>
+              <a href="appointment.html" class="btn btn-subtle btn-sm">Discuss With Our Team →</a>
+            </div>
+          </article>
+
+          <!-- Service Card 4 -->
+          <article class="card">
+            <div class="card-icon card-icon-forest">🩺</div>
+            <span class="badge badge-forest" style="margin-bottom: var(--space-2);">Rehabilitation</span>
+            <h3 class="card-title">[Neuro-Rehabilitation & Therapy]</h3>
+            <p class="card-body">
+              Structured physiotherapy plans assisting patients with motor balance, gait retraining, and functional recovery.
+            </p>
+            <div style="margin-block: var(--space-3);">
+              <span class="text-caption" style="font-weight: 600; text-transform: uppercase; color: var(--color-text-muted);">Common Concerns Addressed:</span>
+              <ul class="card-focus-list">
+                <li class="card-focus-item">[Post-stroke physical rehabilitation]</li>
+                <li class="card-focus-item">[Gait instability & balance training]</li>
+                <li class="card-focus-item">[Functional mobility retraining]</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="text-caption">Outpatient Service</span>
+              <a href="appointment.html" class="btn btn-subtle btn-sm">Discuss With Our Team →</a>
+            </div>
+          </article>
+
+          <!-- Service Card 5 -->
+          <article class="card">
+            <div class="card-icon card-icon-ocean">🔍</div>
+            <span class="badge badge-ocean" style="margin-bottom: var(--space-2);">Cognitive Care</span>
+            <h3 class="card-title">[Cognitive & Memory Health]</h3>
+            <p class="card-body">
+              Structured clinical reviews for memory difficulties, age-related cognitive changes, and neuro-functional screening.
+            </p>
+            <div style="margin-block: var(--space-3);">
+              <span class="text-caption" style="font-weight: 600; text-transform: uppercase; color: var(--color-text-muted);">Common Concerns Addressed:</span>
+              <ul class="card-focus-list">
+                <li class="card-focus-item">[Memory recall changes]</li>
+                <li class="card-focus-item">[Attention & focus difficulties]</li>
+                <li class="card-focus-item">[Cognitive screening & counseling]</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="text-caption">Outpatient Service</span>
+              <a href="appointment.html" class="btn btn-subtle btn-sm">Discuss With Our Team →</a>
+            </div>
+          </article>
+
+          <!-- Service Card 6 -->
+          <article class="card">
+            <div class="card-icon">🌿</div>
+            <span class="badge badge-sand" style="margin-bottom: var(--space-2);">Neuromuscular</span>
+            <h3 class="card-title">[Neuromuscular Care & Consultation]</h3>
+            <p class="card-body">
+              Clinical consultations for muscle weakness, neuropathy symptoms, involuntary movements, and motor coordination.
+            </p>
+            <div style="margin-block: var(--space-3);">
+              <span class="text-caption" style="font-weight: 600; text-transform: uppercase; color: var(--color-text-muted);">Common Concerns Addressed:</span>
+              <ul class="card-focus-list">
+                <li class="card-focus-item">[Peripheral neuropathy symptoms]</li>
+                <li class="card-focus-item">[Muscle fatigue & cramps]</li>
+                <li class="card-focus-item">[Motor coordination & tremors]</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span class="text-caption">Outpatient Service</span>
+              <a href="appointment.html" class="btn btn-subtle btn-sm">Discuss With Our Team →</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- SECTION 4 — FEATURED SERVICE SECTION -->
+        <article class="service-featured" aria-labelledby="featured-service-title">
+          <div class="service-featured-grid">
+            <div class="service-featured-visual">
+              <div class="service-featured-icon">🧠</div>
+              <img src="rs-logo.png" alt="RS Neuro Health Care Center Specialist Logo" style="max-width: 80px; height: auto; margin-bottom: var(--space-3);" width="80" height="80">
+              <span class="badge badge-ocean" style="margin-bottom: var(--space-2);">Featured Service</span>
+              <span class="text-caption">Specialized Outpatient Consultation</span>
+            </div>
+
+            <div class="service-featured-content">
+              <span class="section-tag">[Featured Service]</span>
+              <h3 id="featured-service-title" class="service-featured-title">[Featured Clinical Service]</h3>
+              <p class="service-featured-desc">
+                <strong>[Featured Service Description]</strong><br>
+                Dedicated clinical consultations focusing on thorough neurological history examination, symptom progression review, and tailored conservative management strategies.
+              </p>
+
+              <div class="service-featured-points">
+                <div class="service-featured-point">
+                  <span>✓</span>
+                  <div>
+                    <strong>[Key Focus Area]</strong>
+                    <p class="text-caption" style="margin: 0;">Comprehensive clinical assessments.</p>
+                  </div>
+                </div>
+                <div class="service-featured-point">
+                  <span>✓</span>
+                  <div>
+                    <strong>[Diagnostic Approach]</strong>
+                    <p class="text-caption" style="margin: 0;">Evidence-based clinical guidelines.</p>
+                  </div>
+                </div>
+                <div class="service-featured-point">
+                  <span>✓</span>
+                  <div>
+                    <strong>[Treatment / Care Information]</strong>
+                    <p class="text-caption" style="margin: 0;">Conservative patient management.</p>
+                  </div>
+                </div>
+                <div class="service-featured-point">
+                  <span>✓</span>
+                  <div>
+                    <strong>[Patient Information]</strong>
+                    <p class="text-caption" style="margin: 0;">Consultations scheduled by appointment.</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="appointment.html" class="btn btn-primary">Book Consultation for This Service</a>
+            </div>
           </div>
-          <div class="card">
-            <div class="service-icon">🦴</div>
-            <h3>Spinal & Chiropractic Care</h3>
-            <p>Gentle spinal adjustments to relieve back pain, neck pain, and improve mobility.</p>
-          </div>
-          <div class="card">
-            <div class="service-icon">💆</div>
-            <h3>Physiotherapy</h3>
-            <p>Targeted rehabilitation for nerve injuries, stroke recovery, and chronic pain management.</p>
-          </div>
-          <div class="card">
-            <div class="service-icon">⚡</div>
-            <h3>Nerve Treatment</h3>
-            <p>Advanced therapy for sciatica, pinched nerves, and peripheral neuropathy.</p>
-          </div>
-          <div class="card">
-            <div class="service-icon">🩻</div>
-            <h3>Pain Management</h3>
-            <p>Non-surgical relief for arthritis, sports injuries, and musculoskeletal conditions.</p>
-          </div>
-          <div class="card">
-            <div class="service-icon">🚑</div>
-            <h3>24-Hour Emergency</h3>
-            <p>Open 24 hours for urgent neuro & spine care — call before visiting.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — PATIENT JOURNEY SECTION -->
+    <section class="section" aria-labelledby="journey-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Care Pathway</span>
+          <h2 id="journey-heading" class="section-title">What to Expect During Your Care</h2>
+          <p class="section-desc">
+            A structured, step-by-step overview of the clinical consultation and follow-up process.
+          </p>
+        </div>
+
+        <div class="journey-grid">
+          <!-- Step 1 -->
+          <article class="journey-card">
+            <div class="journey-step-badge">1</div>
+            <h3 class="journey-title">Step 1 — Consultation</h3>
+            <p class="journey-desc">
+              <strong>[Initial Consultation Information]</strong><br>
+              A detailed clinical discussion reviewing your medical history, onset of symptoms, and day-to-day functional impacts.
+            </p>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="journey-card">
+            <div class="journey-step-badge">2</div>
+            <h3 class="journey-title">Step 2 — Evaluation</h3>
+            <p class="journey-desc">
+              <strong>[Evaluation / Diagnostic Information]</strong><br>
+              Thorough physical and neurological examinations, with review of any prior diagnostic scans or blood panels.
+            </p>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="journey-card">
+            <div class="journey-step-badge">3</div>
+            <h3 class="journey-title">Step 3 — Care Planning</h3>
+            <p class="journey-desc">
+              <strong>[Care Planning Information]</strong><br>
+              Formulation of an individualized, conservative management plan tailored to your clinical assessment.
+            </p>
+          </article>
+
+          <!-- Step 4 -->
+          <article class="journey-card">
+            <div class="journey-step-badge">4</div>
+            <h3 class="journey-title">Step 4 — Follow-Up</h3>
+            <p class="journey-desc">
+              <strong>[Follow-Up Information]</strong><br>
+              Periodic review consultations to monitor symptom progress, therapy response, and adjust care recommendations.
+            </p>
+          </article>
+        </div>
+
+        <!-- Mandatory Pathway Notice -->
+        <div class="journey-notice">
+          <strong>Important Care Notice:</strong> Your care pathway may vary depending on your individual needs and the clinical assessment of our medical team. Every patient evaluation is individualized.
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — WHEN TO SEEK A CONSULTATION (PATIENT EDUCATION) -->
+    <section class="section section-alt" aria-labelledby="when-to-seek-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Patient Guidance</span>
+          <h2 id="when-to-seek-heading" class="section-title">When to Consider a Neurological Consultation</h2>
+          <p class="section-desc">
+            Helpful educational guidance on recognizing common neurological concerns that benefit from professional clinical assessment.
+          </p>
+        </div>
+
+        <div class="guidance-grid">
+          <article class="guidance-card">
+            <div class="guidance-icon">⚡</div>
+            <h3 class="guidance-title">Persistent Headaches</h3>
+            <p class="guidance-desc">
+              Unexplained, frequent, or escalating headaches, migraine episodes, or changes in your typical headache pattern.
+            </p>
+          </article>
+
+          <article class="guidance-card">
+            <div class="guidance-icon">🌿</div>
+            <h3 class="guidance-title">Nerve & Sensory Symptoms</h3>
+            <p class="guidance-desc">
+              Persistent tingling, numbness, pins and needles, or burning sensations affecting your hands, feet, or limbs.
+            </p>
+          </article>
+
+          <article class="guidance-card">
+            <div class="guidance-icon">🚶</div>
+            <h3 class="guidance-title">Movement & Balance Changes</h3>
+            <p class="guidance-desc">
+              Noticeable difficulty with walking stability, unsteadiness, unexpected dizziness, or involuntary tremors.
+            </p>
+          </article>
+
+          <article class="guidance-card">
+            <div class="guidance-icon">💭</div>
+            <h3 class="guidance-title">Memory & Cognitive Concerns</h3>
+            <p class="guidance-desc">
+              Noticeable changes in short-term recall, mental focus, confusion, or difficulty following conversations.
+            </p>
+          </article>
+
+          <article class="guidance-card">
+            <div class="guidance-icon">🦴</div>
+            <h3 class="guidance-title">Radiating Spine Discomfort</h3>
+            <p class="guidance-desc">
+              Persistent neck or lower back pain that shoots down into the arms, legs, or buttocks (sciatica-like symptoms).
+            </p>
+          </article>
+
+          <article class="guidance-card">
+            <div class="guidance-icon">🩺</div>
+            <h3 class="guidance-title">Existing Condition Monitoring</h3>
+            <p class="guidance-desc">
+              Periodic reviews, symptom tracking, or rehabilitation adjustments for previously diagnosed neurological conditions.
+            </p>
+          </article>
+        </div>
+
+        <!-- SECTION 7 — CLINICAL DISCLAIMER BOX -->
+        <div class="clinical-disclaimer-box">
+          <div class="clinical-disclaimer-icon">ℹ️</div>
+          <p class="clinical-disclaimer-text">
+            <strong>Clinical Notice & Disclaimer:</strong> Services and treatment options are subject to clinical assessment and individual patient needs. Please consult a qualified healthcare professional for advice regarding your specific condition. If you are concerned about persistent or unexplained symptoms, consider discussing them with a qualified doctor. If you experience sudden weakness, facial numbness, or speech difficulties, seek immediate emergency medical care.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — SERVICE FAQ SECTION (NATIVE DETAILS/SUMMARY) -->
+    <section class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header section-header-center">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 id="faq-heading" class="section-title">Common Patient Inquiries</h2>
+          <p class="section-desc">
+            Answers to common questions regarding our outpatient neurological consultations and preparation.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- FAQ 1 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>What happens during an initial neurological consultation?</span>
+              <span class="faq-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="faq-content">
+              <strong>[Consultation Information]</strong><br>
+              During your first visit, the doctor reviews your complete medical history, conducts a targeted neurological examination (checking reflexes, sensation, balance, and cranial nerves), and discusses diagnostic or management options tailored to your situation.
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>Do I need to bring previous medical records?</span>
+              <span class="faq-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="faq-content">
+              <strong>[Medical Record Guidance]</strong><br>
+              Yes, bringing any previous MRI or CT scans, blood test reports, discharge summaries, and a current list of all medications helps provide a complete picture of your health.
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>How do I book a consultation?</span>
+              <span class="faq-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="faq-content">
+              You can schedule an appointment by calling <a href="tel:[Phone Number]">[Phone Number]</a> or by submitting a request through our <a href="appointment.html">appointment booking route</a>. Our clinical coordinator will confirm an available consultation slot.
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>Should I bring previous reports or prescriptions?</span>
+              <span class="faq-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="faq-content">
+              <strong>[Patient Preparation Information]</strong><br>
+              Bringing physical copies or digital reports of recent investigations and current prescription slips ensures that consultations are based on complete and accurate medical information.
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>What services are available at the center?</span>
+              <span class="faq-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="faq-content">
+              <strong>[Verified Service Information]</strong><br>
+              RS Neuro Health Care Center offers outpatient neurological assessments, spine and peripheral nerve care, migraine management, neuro-rehabilitation guidance, and cognitive health screening.
+            </div>
+          </details>
+
+          <!-- FAQ 6 -->
+          <details class="faq-item">
+            <summary class="faq-summary">
+              <span>How long does a consultation take?</span>
+              <span class="faq-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="faq-content">
+              <strong>[Consultation Duration]</strong><br>
+              Initial consultations generally allow adequate time for comprehensive history review and examination. Exact appointment durations vary depending on individual case complexity.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9 — APPOINTMENT CONVERSION CTA -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-sand-light) 0%, rgba(224, 242, 254, 0.4) 100%); border-top: 1px solid var(--color-border-subtle);" aria-labelledby="services-cta-heading">
+      <div class="container text-center">
+        <div style="max-width: 680px; margin-inline: auto;">
+          <span class="section-tag">Schedule Your Visit</span>
+          <h2 id="services-cta-heading" class="section-title">Discuss Your Care With Our Team</h2>
+          <p class="section-desc" style="margin-bottom: var(--space-6);">
+            Book an outpatient consultation at RS Neuro Health Care Center in [Clinic Address] to review your symptoms and plan appropriate care.
+          </p>
+          <div class="cta-actions" style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+            <a href="appointment.html" class="btn btn-primary btn-lg">Book an Appointment</a>
+            <a href="contact.html" class="btn btn-outline btn-lg">Contact Us</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Global Footer -->
   <footer class="footer">
     <div class="container">
-      <img src="rs logo.png" alt="RS Neuro Care Centre Logo" class="footer-logo-img">
-      <p>
-        <span class="footer-emoji">🧠</span> RS Neuro Care Centre — Dr. R. K. Gupta 
-        <span class="footer-emoji">🩺</span><br>
-        Manuwapul, Bettiah, Bihar 845450 · 📞 <a href="tel:08797459791" style="color: var(--primary-dark);">087974 59791</a><br>
-        © 2025 RS Neuro Care Centre. All rights reserved.
-      </p>
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Identity -->
+        <div>
+          <a href="index.html" class="brand" style="margin-bottom: var(--space-4);">
+            <img src="rs-logo.png" alt="RS Neuro Health Care Center Logo" class="brand-logo" width="40" height="40">
+            <div class="brand-info">
+              <span class="brand-title">RS Neuro Care</span>
+              <span class="brand-subtitle">Health Care Center</span>
+            </div>
+          </a>
+          <p class="text-sm" style="margin-bottom: var(--space-4);">
+            RS Neuro Health Care Center provides dedicated neurological consultations, conservative spine care, and patient-first rehabilitation support in [Clinic Address].
+          </p>
+          <div style="display: flex; gap: var(--space-2); flex-wrap: wrap;">
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Facebook: [Social Link Pending Configuration]">[Facebook]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic Instagram: [Social Link Pending Configuration]">[Instagram]</span>
+            <span class="badge badge-neutral" role="note" aria-label="Clinic YouTube: [Social Link Pending Configuration]">[YouTube]</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Doctors / Team</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Care Pathways -->
+        <div>
+          <h4 class="footer-col-title">Patient & Care</h4>
+          <ul class="footer-links">
+            <li><a href="appointment.html">Book Appointment</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="services.html">Neurological Services</a></li>
+            <li><a href="services.html">Spine & Nerve Health</a></li>
+            <li><a href="doctors.html">Consultation Schedule</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Information -->
+        <div>
+          <h4 class="footer-col-title">Center Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span>📍</span>
+              <span>[Clinic Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>📞</span>
+              <a href="tel:[Phone Number]" style="color: inherit; text-decoration: underline;">[Phone Number]</a>
+            </div>
+            <div class="footer-contact-item">
+              <span>✉️</span>
+              <span>[Email Address]</span>
+            </div>
+            <div class="footer-contact-item">
+              <span>🕒</span>
+              <span>[Consultation Hours]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright & Disclaimer -->
+      <div class="footer-bottom">
+        <p>© <span id="currentYear">2025</span> RS Neuro Health Care Center. All rights reserved.</p>
+        <p class="text-caption">
+          Patient Privacy Notice · Healthcare Disclaimer: Medical information provided is for educational guidance only. Consult [Doctor Name] for clinical diagnosis.
+        </p>
+      </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp CTA -->
-  <a href="https://wa.me/918797459791?text=Namaste%20Dr.%20Gupta,%20mujhe%20appointment%20ke%20liye%20jankari%20chahiye." class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="22" height="22">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-    </svg>
-    <span>Chat on WhatsApp</span>
-  </a>
-
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    if (navToggle && navLinks) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navLinks.classList.toggle('nav-open');
-        navToggle.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', isOpen);
-      });
-    }
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
